@@ -1,0 +1,10 @@
+The following CSS code causes unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This code intends to make two divs sit side-by-side, each taking up 50% of the width of their parent container. However, some browsers may not render this correctly if the parent container's width is not explicitly defined or is not a whole number.  The `float: left;` property can also lead to unexpected layout behavior if not properly cleared with a technique like `clear: both;` on a subsequent element.

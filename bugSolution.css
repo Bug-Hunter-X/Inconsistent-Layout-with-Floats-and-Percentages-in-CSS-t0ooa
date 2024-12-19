@@ -1,0 +1,15 @@
+The following CSS code provides a more robust solution:
+
+```css
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 50%;
+  box-sizing: border-box;
+}
+```
+
+This solution uses flexbox, which provides a more reliable and consistent way to create the desired two-column layout, irrespective of the parent container's width. The `box-sizing: border-box` ensures that padding and border are included in the element's total width, preventing unexpected width expansion.
